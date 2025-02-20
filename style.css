@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*=================END CSS RESET=================*/
+
+body{
+    background-color: #D6C5B5;
+}
+
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #A19285;
+    padding: 4% 2% 2% 5%;
+}
+
+nav{
+    width: 95%;
+    padding: 0.25% 0 0.25% 0;
+    border-bottom: 1px solid #1C1A18;
+    margin: 0 auto 2% auto;
+    box-sizing: border-box;
+}
+
+nav>ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li>a{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin: 0;
+    background-color: #FFF3E8;
+    color: #1C1A18;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav>ul>li>a:hover{
+    background-color: #6B615A;
+    color: #FFF3E8;
+}
+
+#main-section{
+    float: left;
+    width: 60%;
+    margin: 0 0 2% 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#side-section{
+    float: left;
+    width: 39.93%;
+    margin: 0 0 2% 0;
+    padding: 0;
+    border-left: 1px dashed #1C1A18;
+}
+
+article{
+    padding: 0 8%;
+}
+
+footer{
+    width: 95%;
+    border-top: 1px solid #1C1A18;
+    border-bottom: 1px solid #1C1A18;
+    background-color: #FFF3E8;
+    margin: 0 auto 1% auto;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+/*=================TYPE STYLES=================*/
+
+h1,h2,h3,p,small,a{
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+}
+
+h1{
+    color: #6B615A;
+    font-size: 48px;
+}
+
+h2{
+    color: #1C1A18;
+    font-size: 36px;
+}
+
+h3{
+    color: #1C1A18;
+    font-size: 30px;
+}
+
+P{
+    color: #6B615A;
+    font-size: 24px;
+}
+
+small{
+    color: #1C1A18;
+    font-size: 16px;
+}
