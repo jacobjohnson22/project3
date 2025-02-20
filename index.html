@@ -1,82 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>5 Page Website - About Me</title>
+    <title>Project 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
+
+        figure{
+            float: right;
+            width: 30%;
+        }
+
+        figure>img{
+            width: 100%;
+        }
         
-        #wrapper{
-            background-color: rgb(249,246,239);
-            color: rgb(38,25,17);
-        }
-
-        body{
-            width: 70%;
-            margin: auto;
-        }
-
-        header, nav, footer{
-            background-color: rgb(191,175,160);
-            padding: 3px 2% 3px 2%;
-        }
-
-        nav{
-            display: flex;
-            padding-bottom: 20px;
-        }
-
-        nav a {
-            flex: 1;
-            font-size: x-large;
-            color: rgb(38,25,17);
-        }
-
-        article{
-            padding: 3px 2% 3px 2%;
-        }
-
-        h1,h2,h3,nav{
-            font-family: "Oswald", serif;
-        }
-
-        h1{
-            font-size: 48px;
-        }
-
-        h2{
-            font-size: 36px;
-        }
-
-        h3{
-            font-size: 30px;
-        }
-
-        p{
-            font-size: 20px;
-            line-height: 120%;
-            font-family: "Quattrocento", serif;
-        }
-
-        #classes>ol>li{
-            font-size: 20px;
-            line-height: 120%;
-            font-family: "Oswald", serif;
-        }
-
-        #classes>ol>ul>li{
-            font-size: 20px;
-            line-height: 120%;
-            font-family: "Quattrocento", serif;
-            margin: 1% 0;
-        }
-
-        footer{
-            font-size: 16px;
-        }
     </style>
 
     <!--[if lt IE 9]>
@@ -85,70 +26,44 @@
 </head>
 
 <body>
-<div id="wrapper">
-    <header>
-        <h1>About Me</h1>
-    </header>
+    <div id="wrapper">
+        <header>
+            <h1>Introduction</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Page 3</a></li>
+                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="page5.html">Page 5</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <a href="page2.html">Photography</a>
-        <a href="page3.html">Minnesota Timberwolves</a>
-        <a href="page4.html">Hobbies</a>
-        <a href="page5.html">Work</a>
-    </nav>
+        <div id="main-section">
+            <article>
+                <h2>Who I am</h2>
+                <figure>
+                    <img src="images\DSC_0049.JPG">
+                </figure>
+                <p>
+                    Suspendisse id eros quis ipsum mollis sollicitudin ut non metus. Integer odio enim, sagittis in laoreet in, mattis vel turpis. Nullam in tellus maximus, tempor ex at, cursus dui. Etiam vel libero libero. Aliquam nec pulvinar ipsum. Sed mauris lectus, maximus sit amet erat vitae, consequat fringilla ex. Etiam tincidunt elit purus, vel tempor metus aliquet at. Aenean bibendum augue augue, sed ultrices lacus ullamcorper a. Nullam ac justo purus. Duis pretium, nisl in pellentesque varius, mi augue vulputate orci, vitae euismod diam ante at dolor. Integer et urna vitae mi malesuada fermentum non ultricies elit. Quisque at pulvinar ex, eget eleifend mi. Nam efficitur tellus a ante lacinia, et fermentum elit porta. Etiam ipsum nisi, sollicitudin eget ex eu, convallis egestas urna. Fusce semper eros magna, quis aliquam nibh feugiat at. Vivamus ac augue et mauris mollis finibus.
+                </p>
+            </article>
+        </div><!--close main-section div-->
 
-    <article>
-        <p>
-            Hey everyone! My name is Jacob Johnson and I am currently enrolled at NHCC in a transfer pathway to get my bachelor degree in computer science. I plan on getting done in three years instead of four by doing classes over the next two summers.
-        </p>
-        <p>
-            After my first four semesters at NHCC, I plan on transfering to St. Cloud State University to finish my last four semesters there.
-        </p>
-        <div id="classes">
-            <p>
-                These are my classes I plan to take through my first semesters while at NHCC.
-                <ol>
-                    <li>Semester 1</li>
-                    <ul>
-                        <li>Fundamentals of Structured Query Language (SQL)</li>
-                        <li>Fundamentals of Public Speaking</li>
-                        <li>Introduction to Programming in Java (CS0)</li>
-                        <li>College Writing I</li>
-                    </ul>
-                    <li>Semester 2</li>
-                    <ul>
-                        <li>Beginning Web Page Programming</li>
-                        <li>Pre-Calculus</li>
-                        <li>Responsive Web Design</li>
-                        <li>Database Modeling and Design</li>
-                        <li>Human Biology</li>
-                        <li>Object Oriented Programming (CS1)</li>
-                    </ul>
-                    <li>Semester 3</li>
-                    <ul>
-                        <li>College Writing II</li>
-                        <li>Computer Security Basics</li>
-                        <li>Discrete Mathematical Structures</li>
-                        <li>Programming in Python</li>
-                    </ul>
-                    <li>Semester 4</li>
-                    <ul>
-                        <li>Introduction to Philosophy</li>
-                        <li>Calculus I</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Computer Architecture</li>
-                        <li>Principles of Macroeconomics</li>
-                    </ul>
-                </ol>
-            </p>
-        </div>
-    </article>
+        <div id="side-section">
+            <article>
+                <h2>Acomplishments</h2>
+                <p>
+                    Suspendisse id eros quis ipsum mollis sollicitudin ut non metus. Integer odio enim, sagittis in laoreet in, mattis vel turpis. Nullam in tellus maximus, tempor ex at, cursus dui. Etiam vel libero libero. Aliquam nec pulvinar ipsum. Sed mauris lectus, maximus sit amet erat vitae, consequat fringilla ex. Etiam tincidunt elit purus, vel tempor metus aliquet at. Aenean bibendum augue augue, sed ultrices lacus ullamcorper a. Nullam ac justo purus. Duis pretium, nisl in pellentesque varius, mi augue vulputate orci, vitae euismod diam ante at dolor. Integer et urna vitae mi malesuada fermentum non ultricies elit. Quisque at pulvinar ex, eget eleifend mi. Nam efficitur tellus a ante lacinia, et fermentum elit porta. Etiam ipsum nisi, sollicitudin eget ex eu, convallis egestas urna. Fusce semper eros magna, quis aliquam nibh feugiat at. Vivamus ac augue et mauris mollis finibus.
+                </p>
+            </article>
+        </div><!--close side-section div-->
 
-    <footer>
-        <p>Jacob Johnson - Copyright 2025</p>
-    </footer>
-
-</div>
+        <footer class="clear">
+            <p><small>Copyright © 2025. Jacob Johnson</small></p>
+        </footer>
+    </div><!--close wrapper div-->
 </body>
 
 </html>
