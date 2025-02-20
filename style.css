@@ -117,10 +117,11 @@ nav>ul>li>a:hover{
 
 #side-section{
     float: left;
-    width: 39.93%;
+    width: 40%;
     margin: 0 0 2% 0;
     padding: 0;
     border-left: 1px dashed #1C1A18;
+    box-sizing: border-box;
 }
 
 article{
