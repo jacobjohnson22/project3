@@ -151,20 +151,26 @@ h1,h2,h3,p,small,a{
     letter-spacing: 0.03em;
 }
 
-h1{
-    color: #6B615A;
-    font-size: 48px;
+h1,h2,h3{
     font-family: Montserrat;
 }
 
-h2{
+h2,h3,a,small{
     color: #1C1A18;
+}
+
+h1{
+    color: #6B615A;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+h2{
     font-size: 36px;
     font-family: Montserrat;
 }
 
 h3{
-    color: #1C1A18;
     font-size: 30px;
     font-family: Montserrat;
 }
@@ -181,7 +187,6 @@ a{
 }
 
 small{
-    color: #1C1A18;
     font-size: 16px;
     font-family: Hind;
 }
