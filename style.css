@@ -64,11 +64,13 @@ body{
 #wrapper{
     width: 80%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 header{
     background-color: #A19285;
     padding: 4% 2% 2% 5%;
+    box-sizing: border-box;
 }
 
 nav{
@@ -99,7 +101,6 @@ nav>ul>li>a{
     padding: 12px 0;
     margin: 0;
     background-color: #FFF3E8;
-    color: #1C1A18;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -128,6 +129,11 @@ nav>ul>li>a:hover{
 
 article{
     padding: 0 8%;
+    margin-bottom: 2%;
+}
+
+ul>p{
+    margin-bottom: 5%;
 }
 
 footer{
@@ -162,6 +168,7 @@ h2,h3,a,small{
 h1{
     color: #6B615A;
     font-size: 48px;
+    font-weight: bold;
 }
 
 h2{
@@ -183,6 +190,11 @@ p{
 a{
     font-size: 24px;
     font-family: Hind;
+}
+
+article>ul>li{
+    font-size: 30px;
+    font-family: Montserrat;
 }
 
 small{
