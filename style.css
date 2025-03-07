@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
-
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -26,7 +21,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -34,18 +29,20 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    background-color: #D6C5B5;
+    box-sizing: border-box;
 }
 
-ol, ul {
+ol,ul{ 
     list-style: none;
 }
 
-blockquote, q {
+blockquote,q{
     quotes: none;
 }
 
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after{
     content: '';
     content: none;
 }
@@ -55,35 +52,33 @@ table {
     border-spacing: 0;
 }
 
-/*=================END CSS RESET=================*/
+/* Layout */
 
-body{
-    background-color: #D6C5B5;
+*{
+    box-sizing: border-box;
 }
 
 #wrapper{
     width: 80%;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 header{
     background-color: #A19285;
     padding: 4% 2% 2% 5%;
-    box-sizing: border-box;
+}
+
+nav,footer{
+    width: 95%;
 }
 
 nav{
-    width: 95%;
-    padding: 0.25% 0 0.25% 0;
+    padding: 0.25% 0;
     border-bottom: 1px solid #1C1A18;
-    margin: 0 auto 2% auto;
-    box-sizing: border-box;
+    margin: 0 auto 2%;
 }
 
 nav>ul{
-    padding: 0;
-    margin: 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -91,15 +86,13 @@ nav>ul{
 
 nav>ul>li{
     flex: 1;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
 nav>ul>li>a{
     display: block;
     width: 100%;
     padding: 12px 0;
-    margin: 0;
     background-color: #FFF3E8;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -110,55 +103,84 @@ nav>ul>li>a:hover{
     color: #FFF3E8;
 }
 
-#main-section{
+#main-section,#side-section{
     float: left;
+    margin-bottom: 2%;
+    min-height: 100vh;
+}
+
+#main-section{
     width: 60%;
-    margin: 0 0 2% 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 #side-section{
-    float: left;
     width: 40%;
-    margin: 0 0 2% 0;
-    padding: 0;
     border-left: 1px dashed #1C1A18;
-    box-sizing: border-box;
 }
 
 article{
     padding: 0 8%;
-    margin-bottom: 2%;
 }
 
-ul>p{
-    margin-bottom: 5%;
+ul li{
+    list-style: circle;
+}
+
+ol li{
+    list-style: decimal;
+}
+
+.work-quote{
+    font-family: Montserrat;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    background-color: #FFF3E8;
+    border-left: 5px solid #1C1A18;
+    position: relative;
+}
+
+.work-quote p{
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #6B615A;
+    font-size: 24px;
+    font-family: Hind;
+    margin-top: 1%;
+}
+
+.work-quote footer{
+    font-style: italic;
+    color: #6B615A;
+    text-align: right;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #FFF3E8;
 }
 
 footer{
-    width: 95%;
     border-top: 1px solid #1C1A18;
     border-bottom: 1px solid #1C1A18;
     background-color: #FFF3E8;
-    margin: 0 auto 1% auto;
-    padding: 1%;
-    box-sizing: border-box;
+    margin: 0 auto 1%;
+    padding: 1% 0;
+    text-align: center;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-/*=================TYPE STYLES=================*/
+/* Typography */
 
-h1,h2,h3,p,small,a{
+h1,h2,h3,p,small,a,li{
     line-height: 1.5em;
     letter-spacing: 0.03em;
 }
 
 h1,h2,h3{
     font-family: Montserrat;
+    margin-bottom: 1%;
 }
 
 h2,h3,a,small{
@@ -173,18 +195,17 @@ h1{
 
 h2{
     font-size: 36px;
-    font-family: Montserrat;
 }
 
-h3{
+h3,ol li, ul li{
     font-size: 30px;
-    font-family: Montserrat;
 }
 
-p{
+p,td,th,ol li>p, ul li>p{
     color: #6B615A;
     font-size: 24px;
     font-family: Hind;
+    margin-top: 1%;
 }
 
 a{
@@ -192,12 +213,21 @@ a{
     font-family: Hind;
 }
 
-article>ul>li{
-    font-size: 30px;
+article li{
+    font-size: 24px;
     font-family: Montserrat;
 }
 
-small{
+figcaption,small {
     font-size: 16px;
     font-family: Hind;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 1%;
+}
+
+ol li, ul li{
+    font-size: 30px;
 }

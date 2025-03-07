@@ -4,17 +4,29 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>Project 3 - Projects</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <style type="text/css">
 
         #main-section{
-            width: 50%;
+            width: 100%;
         }
 
-        #side-section{
-            width: 50%;
+        table{
+            border: 1px solid #1C1A18;
+            width: 100%;
+        }
+
+        td,th{
+            border: 1px solid #1C1A18;
+            padding: 1%;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        th:first-child {
+            width: 10%;
         }
 
     </style>
@@ -32,6 +44,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Introduction</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="previous_work.html">Previous Work</a></li>
                 <li><a href="future_goals.html">Future Goals</a></li>
                 <li><a href="contact_me.html">Contact Me</a></li>
@@ -40,24 +53,36 @@
 
         <div id="main-section">
             <article>
-                <h2>Modding</h2>
-                <p>
-                    Suspendisse id eros quis ipsum mollis sollicitudin ut non metus. Integer odio enim, sagittis in laoreet in, mattis vel turpis. Nullam in tellus maximus, tempor ex at, cursus dui. Etiam vel libero libero. Aliquam nec pulvinar ipsum. Sed mauris lectus, maximus sit amet erat vitae, consequat fringilla ex. Etiam tincidunt elit purus, vel tempor metus aliquet at. Aenean bibendum augue augue, sed ultrices lacus ullamcorper a. Nullam ac justo purus. Duis pretium, nisl in pellentesque varius, mi augue vulputate orci, vitae euismod diam ante at dolor. Integer et urna vitae mi malesuada fermentum non ultricies elit. Quisque at pulvinar ex, eget eleifend mi. Nam efficitur tellus a ante lacinia, et fermentum elit porta. Etiam ipsum nisi, sollicitudin eget ex eu, convallis egestas urna. Fusce semper eros magna, quis aliquam nibh feugiat at. Vivamus ac augue et mauris mollis finibus.
-                </p>
+                <table>
+                    <caption><h2>Coding Projects</h2></caption>
+                    <thead>
+                        <tr>
+                          <th></th>
+                          <th>Project 1</th>
+                          <th>Project 2</th>
+                          <th>Project 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th>Java</th>
+                          <td>Created a "Space Blaster" rip-off game</td>
+                          <td>Created a program to automatically read data from my google sheets</td>
+                          <td>Made a functioning expenses program that tracked and remembers what you paid for and the price associated</td>
+                        </tr>
+                        <tr>
+                          <th>HTML</th>
+                          <td>This project for intro to web design</td>
+                          <td>A website using API's to retrieve crypto prices in real time</td>
+                          <td>A website using API's and javascript to retrieve numbers and make calculations to tell me to most profitable items to create in a game</td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </div><!--close main-section div-->
 
-        <div id="side-section">
-            <article>
-                <h2>What's Next</h2>
-                <p>
-                    Suspendisse id eros quis ipsum mollis sollicitudin ut non metus. Integer odio enim, sagittis in laoreet in, mattis vel turpis. Nullam in tellus maximus, tempor ex at, cursus dui. Etiam vel libero libero. Aliquam nec pulvinar ipsum. Sed mauris lectus, maximus sit amet erat vitae, consequat fringilla ex. Etiam tincidunt elit purus, vel tempor metus aliquet at. Aenean bibendum augue augue, sed ultrices lacus ullamcorper a. Nullam ac justo purus. Duis pretium, nisl in pellentesque varius, mi augue vulputate orci, vitae euismod diam ante at dolor. Integer et urna vitae mi malesuada fermentum non ultricies elit.
-                </p>
-            </article>
-        </div><!--close side-section div-->
-
         <footer class="clear">
-            <p><small>Copyright © 2025. Jacob Johnson</small></p>
+            <small>Copyright © 2025. Jacob Johnson</small>
         </footer>
     </div><!--close wrapper div-->
 </body>
